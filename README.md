@@ -96,7 +96,7 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
         wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
         echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
         sudo apt-get update
-        sudo apt-get install trivy        
+        sudo apt-get install trivy -y        
         ```
         
         to scan image using trivy
